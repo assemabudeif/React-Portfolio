@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {library} from '@fortawesome/fontawesome-svg-core'
+
+
+import HeroSectionClass from "./HeroSectionClass";
+import AboutMeSectionClass from "./AboutMeSectionClass";
+import SkillsSectionClass from "./SkillsSectionClass";
+import PortfolioSectionClass from "./PortfolioSectionClass";
+import FooterSectionClass from "./FooterSectionClass";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <FontAwesomeIcon icon={"fa-solid fa-envelope"}/>
+            
+            <HeroSectionClass/>
+            <AboutMeSectionClass/>
+            <SkillsSectionClass/>
+            <PortfolioSectionClass/>
+            <FooterSectionClass/>
+        </>
+    );
 }
 
 export default App;
